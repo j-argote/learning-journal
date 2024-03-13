@@ -1,4 +1,4 @@
-/* *, *::before, *::after {box-sizing: border-box;} */
+*, *::before, *::after {box-sizing: border-box;}
 
 html,
 body {
@@ -6,3 +6,38 @@ body {
     padding: 0;
 }
 
+/* display */
+
+header {
+    display: grid;
+    grid-template-columns: 1em 1fr 1fr 1em;
+    grid-template-rows: 30px;
+    grid-template-areas: 
+        'header header header header'
+        ;
+}
+
+
+ul {
+    list-style: none;
+    margin: 0; 
+    justify-content: end;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* main {
+    display: grid;
+    grid-template-columns: 1em 20% 60% 20% 1em;
+
+} */
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.hero-img {
+    width: 60%;
+    height: 60%;
+}
