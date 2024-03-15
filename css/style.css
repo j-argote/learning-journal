@@ -6,38 +6,52 @@ body {
     padding: 0;
 }
 
-/* display */
+/* header */
 
 header {
+    background-color: darkred;
     display: grid;
-    grid-template-columns: 1em 1fr 1fr 1em;
-    grid-template-rows: 30px;
+    grid-template-columns: min-content max-content 1fr;
+    grid-template-rows: 60px;
     grid-template-areas: 
-        'header header header header'
-        ;
+        '. icon header nav .';
+    column-gap: 1em;
+    color: #0E0E0E;
+    background-color: white;
 }
 
+.icon {
+    grid-area: icon;
+}
+
+.icon-text {
+    grid-area: header;
+    font-weight: 900;
+    margin-left: -0.8em;
+}
+
+.icon,
+.icon-text,
+nav {
+    align-self: center;
+}
+
+
+
+nav {
+    grid-area: nav;
+}
 
 ul {
     list-style: none;
-    margin: 0; 
     justify-content: end;
     display: flex;
-    justify-content: space-between;
+    gap: 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-/* main {
-    display: grid;
-    grid-template-columns: 1em 20% 60% 20% 1em;
+/* end header */
 
-} */
+/* hero */
 
-.icon {
-    width: 20px;
-    height: 20px;
-}
-
-.hero-img {
-    width: 60%;
-    height: 60%;
-}
