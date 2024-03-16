@@ -9,7 +9,6 @@ body {
 /* header */
 
 header {
-    background-color: darkred;
     display: grid;
     grid-template-columns: min-content max-content 1fr;
     grid-template-rows: 60px;
@@ -17,7 +16,6 @@ header {
         '. icon header nav .';
     column-gap: 1em;
     color: #0E0E0E;
-    background-color: white;
 }
 
 .icon {
@@ -36,8 +34,6 @@ nav {
     align-self: center;
 }
 
-
-
 nav {
     grid-area: nav;
 }
@@ -53,5 +49,33 @@ ul {
 
 /* end header */
 
-/* hero */
+/* main */
+
+main {
+    display: grid;
+    grid-template-rows: 300px 1fr 1fr;
+    column-gap: 1em;
+    grid-template-areas: 
+        'hero hero hero'
+        '. blog-img .'
+        '. blog-text .';
+}
+
+.hero-img {
+    grid-area: hero;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 -360px;
+    transform: scaleX(-1);
+}
+
+.date,
+.hero-title,
+.hero-intro {
+    grid-area: hero;
+    color: white;
+    z-index: 0;
+    align-self: end;
+}
 
