@@ -8,97 +8,68 @@ body {
 }
 
 h1, 
-p {
+p,
+ul {
     margin: 0;
     padding: 0;
 }
 
+header,
+.feature-date,
+.feature-title,
+.feature-intro,
+.blogs-container {
+    margin: 0 1rem;
+}
+
 /* header */
-
 header {
-    display: grid;
-    grid-template-columns: min-content max-content 1fr;
-    grid-template-rows: 60px;
-    grid-template-areas: 
-        'icon header nav';
-    padding: 0 1em;
-    color: #0E0E0E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Roboto", sans-serif;
+    height: 60px;
 }
 
-.icon {
-    grid-area: icon;
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-.icon-text {
-    grid-area: header;
-    font-weight: 700;
-    margin-left: .3em;
+.logo {
+    max-width: 15%;
 }
 
-.icon,
-.icon-text,
-nav {
-    align-self: center;
+.logo-text {
+    padding: .3em;
+    font-weight: 900;
+    color: #0E0E0E;
 }
 
-nav {
-    grid-area: nav;
-    font-weight: 600;
-}
-
+/* end of header */
+/* nav */
 ul {
     list-style: none;
-    justify-content: end;
     display: flex;
-    gap: 1.5em;
+    justify-content: space-around;
+    padding: 1em ;
+    font-family: inherit;
     text-transform: uppercase;
-    cursor: pointer;
+    font-weight: 900;
 }
 
-/* end header */
+/* left off here */
 
-/* main */
+a {
+    text-decoration: none;
+    color: #090909;
 
-/* section: hero */
-
-.hero {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: min-content auto auto;
-    /* grid-template-areas: 
-        'date'
-        'title'
-        'intro'; */
-    padding: 0 1em;
-    height: 300px;
-    color: white;
-    position: relative;
-    align-content: end;
-    row-gap: .7em;
-    padding-bottom: 1.5em;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    background-image: url("/images/hero.jpg");
-    background-size: cover;
-    background-position: 0 -15rem;
-    height: 100%;
+/* end of nav */
+
+
+/* Section: blogs-container */
+.blog-img {
     width: 100%;
-    transform: scaleX(-1);
-    z-index: -1;
 }
-
-.date {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-}
-
-.hero-title {
-    font-size: 2rem;
-}
-
-
-

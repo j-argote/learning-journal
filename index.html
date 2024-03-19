@@ -13,30 +13,48 @@
     <link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/71d51b43d1.js" crossorigin="anonymous"></script>
     <title>Learning Journal</title>
 </head>
 <body>
     <header>
-        <img class="icon" src="/images/icon.png" alt="icon">
-        <span class="icon-text">My learning journal</span>
-        <nav>
-            <ul>
-                <li>home</li>
-                <li>about me</li>
-            </ul>
-        </nav>
+        <div class="logo-container">
+            <img class="logo" src="/images/icon.png" alt="icon">
+            <span class="logo-text">My learning journal</span>
+        </div>
+        <i class="fa-solid fa-bars fa-xl"></i>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">about me</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="hero">
-            <span class="date">July 23, 2022</span>
-            <h1 class="hero-title">My new journey as a bootcamp student.</h1>
-            <p class="hero-intro">After several months of learning in the Frontend Developer Career Path, I've made the 
+        <section class="feature">
+            <span class="feature-date">July 23, 2022</span>
+            <h1 class="feature-title">My new journey as a bootcamp student.</h1>
+            <p class="feature-intro">After several months of learning in the Frontend Developer Career Path, I've made the 
                 big jump over to the Bootcamp to get expert code reviews of my Solo Projects and meet like-minded peers.
+            </p>
+        </section>
+
+        <section class="blogs-container">
+            <img class="blog-img" src="/images/image1.jpg" alt="Image of an open computer on a desk with lines of code">
+            <span>July 23, 2022</span>
+            <h2>Blog one</h2>
+            <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning 
+                in the Frontend Developer Career Path.
             </p>
         </section>
     </main>
     
-    <!-- <footer></footer> -->
+    <footer>
+        <p>my learning journal</p>
+        <p>copyright &copy2022</p>
+    </footer>
 </body>
 </html>
