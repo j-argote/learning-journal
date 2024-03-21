@@ -47,10 +47,15 @@ header {
     color: #0E0E0E;
 }
 
+i {
+    cursor: pointer;
+}
+
 /* end of header */
 
 /* nav */
-nav {
+
+.hidden {
     display: none;
 }
 
