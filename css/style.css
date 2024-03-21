@@ -77,9 +77,6 @@ a {
 /* section: feature */
 .feature {
     min-height: 300px;
-    /* background-image: url("/images/hero.jpg");
-    background-size: cover;
-    background-position: bottom; */
     color: white;
     display: flex;
     flex-direction: column;
@@ -114,12 +111,60 @@ a {
 }
 
 /* end section: feature */
-
-/* Section: blogs-container */
-.blogs-container {
-    margin-top: 1.5em;
-}
+/* section: blogs */
 
 .blog-img {
     width: 100%;
+    margin: 2em 0 1em 0;
+    border-radius: 3px;
 }
+
+.blog-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0.4em 0;
+}
+
+.blog-text {
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
+}
+
+/* end section: blogs */
+/* more text */
+
+.more-text {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-decoration: underline;
+    margin: 1.5em;
+}
+
+/* end more text */
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #202020;
+}
+
+.footer-title {
+    color: #ECECEC;
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 0.7rem;
+}
+
+.footer-text {
+    color: #D7D7D7;
+    font-size: 0.7rem;
+}
+
+/* end footer */
+
+
